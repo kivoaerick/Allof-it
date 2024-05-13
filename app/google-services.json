@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "350529745740",
+    "project_id": "classattendance-5eff0",
+    "storage_bucket": "classattendance-5eff0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:350529745740:android:eb1fc92e86bf54e39715e9",
+        "android_client_info": {
+          "package_name": "com.example.classattendance"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAVOuHEITNJKpr05VYEP-bVAZuoRs6Msw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
