@@ -8,7 +8,12 @@ import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+<<<<<<< HEAD
 
+=======
+import androidx.navigation.navArgument
+import com.example.classattendance.ui.theme.screens.classes.updateStudent.UpdateStudentScreen
+>>>>>>> 9963188c0ea532e912777466734b3221c9e5c992
 import com.example.classattendance.ui.theme.screens.classes.viewAttendance.ViewAttendanceScreen
 import com.example.classattendance.ui.theme.screens.classes.viewStudent.ViewStudentsScreen
 import com.example.classattendance.ui.theme.screens.home.HomeScreen
@@ -21,6 +26,13 @@ import com.example.classattendancemanagementapp.ui.theme.screens.classes.Foregro
 import com.example.classattendancemanagementapp.ui.theme.screens.classes.UpdateDeleteStudentScreen
 
 
+<<<<<<< HEAD
+=======
+//import com.example.classattendancemanagementapp.ui.theme.screens.register.RegisterActivity
+//import com.example.myapplication100.ui.theme.screens.products.UpdateProductsScreen
+//import com.example.myapplication100.ui.theme.screens.products.ViewProductsScreen
+
+>>>>>>> 9963188c0ea532e912777466734b3221c9e5c992
 @Composable
 fun TopBar(navController: NavHostController) {
 
@@ -30,9 +42,20 @@ fun TopBar(navController: NavHostController) {
 fun AppNavHost(modifier: Modifier = Modifier,
                navController: NavHostController = rememberNavController(),
                startDestination: String = ROUTE_GET_STARTED,
+<<<<<<< HEAD
 
 ){
 
+=======
+//               productViewModel: ProductViewModel
+){
+//    val navController = rememberNavController()
+//
+//    navController.navigate(ROUTE_UPDATE_STUDENT) {
+//        val studentId = passedData.arguments?.getString("studentId") ?: ""
+//        it.passedData.putString("studentId", studentId)
+//    }
+>>>>>>> 9963188c0ea532e912777466734b3221c9e5c992
     NavHost(navController =navController ,
         modifier = modifier,
         startDestination = startDestination){

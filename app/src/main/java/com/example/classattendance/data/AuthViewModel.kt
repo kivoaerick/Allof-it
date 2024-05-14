@@ -3,6 +3,11 @@ import android.app.ProgressDialog
 import com.example.classattendance.navigation.ROUTE_HOME
 import com.example.classattendance.navigation.ROUTE_LOGIN
 import com.example.classattendance.navigation.ROUTE_SIGN_UP
+<<<<<<< HEAD
+=======
+import com.google.firebase.firestore.auth.User
+import android.app.ProgressDialog
+>>>>>>> 9963188c0ea532e912777466734b3221c9e5c992
 import android.content.Context
 import android.widget.Toast
 import androidx.navigation.NavController
@@ -38,11 +43,15 @@ class AuthViewModel(var navController: NavController, var context: Context) {
         } else {
             mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener { task ->
                 if (task.isSuccessful) {
+<<<<<<< HEAD
                     val userdata = com.example.classattendance.models.User(
                         email,
                         password,
                         mAuth.currentUser!!.uid
                     )
+=======
+                    val userdata = User(email, password, mAuth.currentUser!!.uid)
+>>>>>>> 9963188c0ea532e912777466734b3221c9e5c992
                     val regRef = FirebaseDatabase.getInstance().getReference()
                         .child("Users/" + mAuth.currentUser!!.uid)
                     regRef.setValue(userdata).addOnCompleteListener {
