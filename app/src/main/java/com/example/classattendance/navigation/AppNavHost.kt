@@ -30,14 +30,9 @@ fun TopBar(navController: NavHostController) {
 fun AppNavHost(modifier: Modifier = Modifier,
                navController: NavHostController = rememberNavController(),
                startDestination: String = ROUTE_GET_STARTED,
-//               productViewModel: ProductViewModel
+
 ){
-//    val navController = rememberNavController()
-//
-//    navController.navigate(ROUTE_UPDATE_STUDENT) {
-//        val studentId = passedData.arguments?.getString("studentId") ?: ""
-//        it.passedData.putString("studentId", studentId)
-//    }
+
     NavHost(navController =navController ,
         modifier = modifier,
         startDestination = startDestination){
